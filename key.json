@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "artdock-api",
+  "private_key_id": "1cd996589ff963e74951149e8bae66401f12e17c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvMnBOr5P/ndic\nmn80oHYT6WWIoxB+LDtucWcb6spP3Xz4JRgL6nJ1WwGrBCqXH3vlz4EHPzu7UBlz\n3yVDxAaS4+A9gXBSIA+UuNEGdIja6UQepWheiaAQKxPXdFDsZbehJiTWEmH7Wicr\ncNWiT89vmZWnQnygANBT6ycijz6c40TdqsAVB3a8ap1qbMrhv4zJD73M5iFvplCo\n8jdxW1Xhf8/xV4SNdveGbFwKygzY3vSDxddwiE7BUrXfctgk89TAM6P8wtQC1x27\njQ+p0ac/gKI17LPZvg1Nlv/e9Z2ATL/iMw+ZlGntrsVEm5EsnaDKyQ1kL/U/GOJZ\nsWaaN2z7AgMBAAECggEAE0pnplUGjpyinL/AO5sNgAIbgsYzCzQzSQ+7ODjhP5ZW\nQSZ9ytYXoJy9hsdF1JphXzu6wSxbwd4UfLc4gwktu3UpnEFz4im96B902JPypmli\nmEiYljbrhSGRJOXzASHuwb48S8aou5nreojej77foDIA50gBW/GAVDUuJnaFAOuF\n/L7L5Ven45d7mbik+isijk5oE1ODaJECZgO5jPUHQnpNMV/n7I8qSuYhdOqGC+CN\ntcTzfUMwYlpDEJPcbgeg9k4cn/LJST/O1kuU5uMM7Y9YOlaXMo7dZLEoVz91j14h\nTcsEmJfGaJlaklZyUDBP3wdiH59FfD0TVOj81hqGQQKBgQDgpSZLKWShshuv5GNO\nzmLiQspTT+aGtK00cp1qDSY0QTuMnlruaXaMOBGJBekDm9XghsIutSK+77yclhCr\n64YNAhtnDYSmZC2yRmw8UAgEAOQYqFMWYI3zZK0qH/Tp1vrlMgdgdSLwg/wOhnwl\nqwNL9qxTUo8Yp57uagdypb7ZwQKBgQDHpnJ4qgWElwKhTWKa24xqJMvqSzRzAyPQ\nBuI/kfBoJuO9JGQ3/qd39njM9n0E31uZDAbWO+5wun+G91GLzmJW7PYtgBmcqfsu\nxzvyIhMOQnZ3pifj1CJSD2uzADVoduzmyEJZ7OF4vMX6I9xuIG4PrIeiSz0xukOm\nCx9qrwOduwKBgD8qsQXZcc51wotG8RWruupcVX/vq6adD0b8I386i0+OOCxmKrN3\nPDpZWbTp0IePPiiQO/HeRRLjXmm5WJ6+70ahHQtxJaeT67WBT9X1uwtFJN46FoLo\nS4HxATAjJD7MkGf6FVDuHxD6S9nZvvboi1jE19fmEw6fs3Teo5F9QZkBAoGBAILy\nyDgehDn/9iioIhmiEMn50omcxAz/rTifmzvI097sSwle2iDj9SG41mjQ7xUIDwMm\nIUHY0z67BDQY+TJyrouHJryXPbVExExdPxNEiC0dKKi3oYhMNiqOlLw2UdFv11hT\nVzm2JfjUECJN7SGKQcYkCl5HbR61pfM9bmDB4+RLAoGBAIurM1iYLl51Pfoq7eA7\n3TVYBJOOOcmrvd3Y2IgFkq7y7iQ803NobaabKIkz0AoJPOFddT2sMMRYpiqNV848\n3JBwOlOtiuqn+OP9kwP+wfqQk4jCSRlLhAItzzNRLzEMfslfErpxF6E9xSPWR9Na\n7UNbsEKyJdd46vP+UtWDT4c8\n-----END PRIVATE KEY-----\n",
+  "client_email": "docker-image-ci@artdock-api.iam.gserviceaccount.com",
+  "client_id": "106628521912916811621",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/docker-image-ci%40artdock-api.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

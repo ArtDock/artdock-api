@@ -21,6 +21,7 @@ jobs:
       - name: Setup Google Cloud
         uses: google-github-actions/setup-gcloud@v1
         with:
+          service_account: docker-image-ci@artdock-api.iam.gserviceaccount.com
           service_account_key: ${{ secrets.GCLOUD_AUTH }}
           project_id: artdock-api
 

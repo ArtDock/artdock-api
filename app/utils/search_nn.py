@@ -24,8 +24,8 @@ class Search:
             t.add_item(i+1, df_all['artist_emb'][i])
         t.build(10)
 
-        nns = t.get_nns_by_item(0, 16, search_k=-1, include_distances=False)
+        nns = t.get_nns_by_item(0, 11, search_k=-1, include_distances=False)
         nns = [x - 1 for x in nns]
         nns.pop(0)
 
-        return df_all[["id", "name"]].iloc[nns, :]
+        return df_all[["id", "nameJa", "nameEn"]].iloc[nns, :]

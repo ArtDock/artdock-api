@@ -7,6 +7,9 @@ import json
 
 app = FastAPI()
 
+# start development server via this command
+#
+
 
 @app.get("/health",
          tags=["health_check"],
@@ -15,6 +18,15 @@ app = FastAPI()
          status_code=status.HTTP_200_OK,)
 def get_health():
     return {"message": "OK"}
+
+
+@app.get("/artists",
+         tags=["artist_list"],
+         summary="Get Artist List",)
+def get_artists():
+    df_artist = GraphFetcher.load_artist_name()
+    res = json.loads(df_artist.to_json(orient="records"))
+    return {"artists": res}
 
 
 @app.get("/artists/emb",

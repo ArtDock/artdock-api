@@ -1,0 +1,15 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "asia-northeast1-docker.pkg.dev/artdock-api/api/api:v1.0.0",
+        ".",
+      ]
+images:
+  - "asia-northeast1-docker.pkg.dev/artdock-api/api/api:v1.0.0"
+# build and push via this command
+#  $ gcloud builds submit \
+#     --region asia-northeast1 \
+#     --config cloudbuild.yaml

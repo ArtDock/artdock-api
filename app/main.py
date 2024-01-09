@@ -8,7 +8,9 @@ import json
 app = FastAPI()
 
 # start development server via this command
-#
+# source .venv/bin/activate
+# cd app
+# uvicorn main:app --reload
 
 
 @app.get("/health",
@@ -32,7 +34,7 @@ def get_artists():
 @app.get("/artists/emb",
          tags=["search_nn"],
          summary="Search Nearest Neighbor Artists from Embedding",)
-def search_nn(artist_id1: str = None, artist_id2: str = None, artist_id3: str = None, artist_id4: str = None):
+def search_nn(artist_id1: str = None, artist_id2: str = None, artist_id3: str = None, artist_id4: str = None, start_index: int = 0, num_neighbor: int = 11):
     artist_ids = [artist_id1, artist_id2, artist_id3, artist_id4]
     if artist_ids == [None, None, None, None]:
         return {"message": "None Parameter"}
@@ -42,8 +44,10 @@ def search_nn(artist_id1: str = None, artist_id2: str = None, artist_id3: str = 
 
     average_emb = Search.emb_average(df=df_artist, emb_col="artist_emb")
 
-    df_nn = Search.annoy(average_emb)
+    df_nn = Search.annoy(query_emb=average_emb,
+                         num_neighbor=start_index+num_neighbor)
     df_nn = df_nn.reset_index(drop=True).reset_index()
+    df_nn = df_nn.iloc[start_index:]
     print(df_nn)
     res = json.loads(df_nn.to_json(orient="records"))
 

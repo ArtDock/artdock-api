@@ -15,6 +15,7 @@ driver = GraphDatabase.driver(URI, auth=AUTH)
 
 def fetch_data(query, params={}):
     with driver.session() as session:
+        print(query, params)
         result = session.run(query, params)
         return pd.DataFrame([r.values() for r in result], columns=result.keys())
 

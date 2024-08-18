@@ -10,6 +10,4 @@ steps:
 images:
   - "asia-northeast1-docker.pkg.dev/artdock-api/api/api:v1.0.0"
 # build and push via this command
-#  $ gcloud builds submit \
-#     --region asia-northeast1 \
-#     --config cloudbuild.yaml
+#  $ gcloud builds submit --region global --config cloudbuild.yaml
